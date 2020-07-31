@@ -1,7 +1,7 @@
 # mySpot
 
 
-
+1)
     public void visitorButtonPressed(View view) {
         Intent intent = new Intent(this, LogInActivity.class);
         startActivity(intent);
@@ -9,7 +9,7 @@
     }
     
 
-
+2)
 
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -74,6 +74,17 @@
         app:layout_constraintVertical_bias="0.187" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+3)
+
+<resources>
+    <string name="app_name">mySpot1</string>
+    <string name="welcomeString">Welcome to mySpot</string>
+    <string name="labelString">I have an Entry Label</string>
+    <string name="visitorString">I\'m a Visitor</string>
+    <string name="securityString">I\'m a Security worker</string>
+</resources>
+
 
 
 
