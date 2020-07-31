@@ -1,21 +1,12 @@
-@Override
-    public boolean onCreateOptionsMenu(Menu menu){
-        MenuInflater inflater=getMenuInflater();//layout
-        inflater.inflate(R.menu.menu,menu);
-        return true;
-    }
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item){
-        switch (item.getItemId()) {
-            case R.id.profile:
-                Toast.makeText(this, "Going to profile", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.signOut:
-                Toast.makeText(this, "You signed out", Toast.LENGTH_SHORT).show();
-                signOut();
-                break;
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorAccent"
+    android:id="@+id/toolbar"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    >
 
-        }
-        return true;
-    }
-
+</androidx.appcompat.widget.Toolbar>
