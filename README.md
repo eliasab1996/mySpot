@@ -1,24 +1,18 @@
-    @Override
-    protected void onResume() {
-        super.onResume();
-        Intent intent = getIntent();
-        String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
-        TextView textView = findViewById(R.id.textView);
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
-            OffsetTime offset = OffsetTime.now();
-            if (offset.getHour()>=6 && offset.getHour()<12){
-                textView.setText("Good Morning "+ message);
-            }
-            else if (offset.getHour()>=12 && offset.getHour()<17){
-                textView.setText("Good Afternoon "+ message);
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-            }
-            else if (offset.getHour()>=17 && offset.getHour()<20){
-                textView.setText("Good Evening "+ message);
-            }
 
-            else if (offset.getHour()>=20 || offset.getHour()<6){
-                textView.setText("Good Night "+ message);
-            }
-        }
-    }
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/ic_home"/>
+    <item
+        android:id="@+id/notifications"
+        android:title="Notifications"
+        android:icon="@drawable/ic_notifications"/>
+    <item
+        android:id="@+id/profile"
+        android:title="Profile"
+        android:icon="@drawable/ic_person"/>
+
+</menu>
