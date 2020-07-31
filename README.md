@@ -10,3 +10,8 @@
     >
 
 </androidx.appcompat.widget.Toolbar>
+
+
+
+ Toolbar toolbar= findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
