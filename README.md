@@ -1,18 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<activity android:name=".ProfileActivity"></activity>
+        <activity
+            android:name=".LabelHomePageActivity"
+            android:parentActivityName=".MainActivity" /> <!-- Note: we updated the parent activity -->
+        <activity
+            android:name=".LogInActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-
-    <item
-        android:id="@+id/home"
-        android:title="Home"
-        android:icon="@drawable/ic_home"/>
-    <item
-        android:id="@+id/notifications"
-        android:title="Notifications"
-        android:icon="@drawable/ic_notifications"/>
-    <item
-        android:id="@+id/profile"
-        android:title="Profile"
-        android:icon="@drawable/ic_person"/>
-
-</menu>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+<uses-permission android:name="android.permission.INTERNET" />
