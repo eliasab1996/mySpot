@@ -1,16 +1,24 @@
-<activity android:name=".ProfileActivity"></activity>
-        <activity
-            android:name=".LabelHomePageActivity"
-            android:parentActivityName=".MainActivity" /> <!-- Note: we updated the parent activity -->
-        <activity
-            android:name=".LogInActivity"
-            android:parentActivityName=".MainActivity" />
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Intent intent = getIntent();
+        String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
+        TextView textView = findViewById(R.id.textView);
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+            OffsetTime offset = OffsetTime.now();
+            if (offset.getHour()>=6 && offset.getHour()<12){
+                textView.setText("Good Morning "+ message);
+            }
+            else if (offset.getHour()>=12 && offset.getHour()<17){
+                textView.setText("Good Afternoon "+ message);
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-    </application>
-<uses-permission android:name="android.permission.INTERNET" />
+            }
+            else if (offset.getHour()>=17 && offset.getHour()<20){
+                textView.setText("Good Evening "+ message);
+            }
+
+            else if (offset.getHour()>=20 || offset.getHour()<6){
+                textView.setText("Good Night "+ message);
+            }
+        }
+    }
