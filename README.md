@@ -240,8 +240,7 @@
                             <LinearLayout
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
-                                    android:gravity="center_horizontal"
-                                    >
+                                    android:orientation="vertical"     >                               >
                                 <ImageView
                                     android:layout_width="90dp"
                                     android:layout_height="90dp"
