@@ -197,11 +197,13 @@
                                     android:id="@+id/findSpot"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:text="@string/app_name"
+                                    android:text="@string/findSpotStr"
                                     android:textSize="17sp"
                                     android:textStyle="bold"
                                     android:paddingLeft="10dp"
                                     android:paddingRight="10dp"
+                                    android:lines="@integer/google_play_services_version"
+
                                     />
                             </LinearLayout>
                             <Space
@@ -246,6 +248,18 @@
                                     android:background="@drawable/circular_grey_bordersolid"
                                     android:padding="10dp"
                                     android:src="@drawable/ic_plan1" />
+                                <TextView
+                                    android:id="@+id/planMyDay"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/planMyDayStr"
+                                    android:textSize="17sp"
+                                    android:textStyle="bold"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:lines="@integer/google_play_services_version"
+
+                                    />
                             </LinearLayout>
                             <Space
                                 android:layout_width="wrap_content"
