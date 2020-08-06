@@ -138,7 +138,7 @@
                 <!--Contact Details-->
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_marginTop="10dp"
                     android:background="@drawable/circularbordersolid"
                     android:orientation="vertical"
@@ -165,13 +165,13 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="146dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:orientation="vertical">
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
+                            android:layout_height="wrap_content"
                             android:gravity="center_vertical"
                             android:paddingRight="8dp">
 
@@ -181,7 +181,7 @@
                                 android:layout_weight="1" />
                             <LinearLayout
                                     android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
+                                    android:layout_height="wrap_content"
                                      android:orientation="vertical"
                                     >
 
@@ -212,7 +212,7 @@
                                 android:layout_weight="1" />
                             <LinearLayout
                                     android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
+                                    android:layout_height="wrap_content"
                                     android:orientation="vertical"
                                     >
                                 <ImageView
@@ -239,7 +239,7 @@
                                 android:layout_weight="1" />
                             <LinearLayout
                                     android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
+                                    android:layout_height="wrap_content"
                                     android:orientation="vertical"     >                               >
                                 <ImageView
                                     android:layout_width="90dp"
@@ -256,9 +256,7 @@
                                     android:textStyle="bold"
                                     android:paddingLeft="10dp"
                                     android:paddingRight="10dp"
-                                    android:lines="@integer/google_play_services_version"
-
-                                    />
+                                    android:lines="@integer/google_play_services_version" />
                             </LinearLayout>
                             <Space
                                 android:layout_width="wrap_content"
@@ -276,24 +274,7 @@
 
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:gravity="center_vertical"
-                            android:paddingRight="8dp">
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:gravity="center_vertical"
-                            android:paddingRight="8dp" />
-
-
-                    </LinearLayout>
+                     
                 </LinearLayout>
 
 
